@@ -6,7 +6,6 @@ def double_number(n): #receiving values into the input n parameter
 
 # calling/invoking the function causes it to run/execute
 print(double_number(5)) #passing in the value 5 as the input argument
-
 print(double_number(12))
 
 #OOP Object Oriented Programming - Nouns (People, Places or Things)
@@ -18,7 +17,7 @@ class Animal: #blueprint/template for a kind of object?
         self.species = species
 
     def speak(self): #method for the animal to speak (function in a class is a "method")
-        print(f"{self.name} says: Hello!")
+        print(f"{self.name} the {self.species}, says: Hello!")
 
     def get_species(self): #method to get the species of the animal
         return self.species
@@ -26,3 +25,8 @@ class Animal: #blueprint/template for a kind of object?
 a = Animal("Leo", "Lion") #create an instance of the Animal class
 a.speak()
 print(a.get_species())
+
+b = Animal("Timmy", "Tomcat") #create an instance of the Animal class
+b.speak()
+print(b.get_species())
+
